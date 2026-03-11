@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex min-h-screen w-full flex-col items-center pt-20 pb-16 overflow-hidden select-none">
+    <section className="relative flex min-dvh-screen w-full flex-col items-center pt-20 pb-16 overflow-hidden select-none">
       <BackgroundImage />
 
       <div className="z-10 flex flex-col items-center px-6 w-full max-w-5xl">
