@@ -19,9 +19,7 @@ export default function IconsNavbar() {
           <Image
             src={icon.path}
             alt={icon.name}
-            width={40}
-            height={40}
-            className="w-10 h-10 md:w-12 md:h-12"
+            className="w-8 h-8 lg:w-12 md:h-12"
           />
         </a>
       ))}
