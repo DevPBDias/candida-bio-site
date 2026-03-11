@@ -1,6 +1,6 @@
 export default function HighlightBox() {
   return (
-    <div className="relative px-6 py-4 max-w-3xl text-center mt-16">
+    <div className="relative px-6 py-4 max-w-3xl text-center">
       {/* Top Left Decoration */}
       <div className="absolute top-0 left-0">
         <div className="absolute h-24 w-0.5 bg-rose-dark -top-4 left-0" />

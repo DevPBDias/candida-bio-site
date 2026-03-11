@@ -1,19 +1,13 @@
 import Image from "next/image";
+import socialLinks from "@/data/SocialLinks";
 
 export default function IconsNavbar() {
-  const icons = [
-    { name: "whatsapp", path: "/icons/whatsapp.png" },
-    { name: "linkedin", path: "/icons/linkedin.png" },
-    { name: "email", path: "/icons/email.png" },
-    { name: "instagram", path: "/icons/instagram.png" },
-  ];
-
   return (
-    <div className="flex gap-8 mt-10">
-      {icons.map((icon) => (
+    <div className="flex gap-8">
+      {socialLinks.map((icon) => (
         <a
-          key={icon.name}
-          href="#"
+          key={icon.id}
+          href={icon.url}
           className="hover:scale-110 transition-transform duration-300"
         >
           <Image
