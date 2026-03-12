@@ -1,4 +1,4 @@
-import ContentBox from "../ui/ContentBox";
+import ContentBox from "@/components/ui/ContentBox";
 
 export default function AboutSection() {
   return (

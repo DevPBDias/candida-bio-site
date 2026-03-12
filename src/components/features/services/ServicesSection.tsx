@@ -3,7 +3,7 @@ import {
   processSteps,
   targetAudience,
 } from "@/data/ContentText";
-import ContentBox from "../ui/ContentBox";
+import ContentBox from "@/components/ui/ContentBox";
 
 export default function ServicesSection() {
   return (

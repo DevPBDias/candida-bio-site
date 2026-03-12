@@ -25,7 +25,7 @@ export default function ThoughtsSection() {
           <div className="absolute inset-0 flex">
             {/* Dark Side (Left) */}
             <div className="w-1/3 bg-slate-dark" />
-            
+
             {/* Image Side (Right) */}
             <div className="relative w-2/3 h-full">
               <Image
@@ -45,7 +45,7 @@ export default function ThoughtsSection() {
       </div>
 
       {/* Quote Box Content */}
-      <div className="relative z-10 w-full max-w-2xl lg:max-w-7xl mx-auto lg:px-20 flex justify-center lg:justify-start">
+      <div className="absolute bottom-10 px-6 lg:relative z-10 w-full  max-w-2xl lg:max-w-7xl mx-auto lg:px-20 flex justify-center lg:justify-start">
         <div className="relative bg-slate-dark/90 backdrop-blur-sm rounded-sm p-10 lg:p-14 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none lg:max-w-xl">
           {/* Top Left Quote Icon */}
           <div className="absolute -top-4 -left-2 lg:left-0 lg:-top-6">
