@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function ThoughtsSection() {
   return (
@@ -28,15 +31,23 @@ export default function ThoughtsSection() {
 
             {/* Image Side (Right) */}
             <div className="relative w-2/3 h-full">
-              <Image
-                src="/images/quote_bg.png"
-                alt="Cândida Dias"
-                fill
-                className="object-cover object-center"
-                quality={100}
-                sizes="66vw"
-                priority
-              />
+              <motion.div
+                initial={{ scale: 1.05, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                className="relative w-full h-full"
+              >
+                <Image
+                  src="/images/quote_bg.png"
+                  alt="Cândida Dias"
+                  fill
+                  className="object-cover object-center"
+                  quality={100}
+                  sizes="66vw"
+                  priority
+                />
+              </motion.div>
               {/* Desktop Gradient Fade from the left of this container */}
               <div className="absolute inset-0 bg-linear-to-r from-slate-dark via-slate-dark/30 to-transparent" />
             </div>
@@ -45,10 +56,18 @@ export default function ThoughtsSection() {
       </div>
 
       {/* Quote Box Content */}
-      <div className="absolute bottom-10 px-6 lg:relative z-10 w-full  max-w-2xl lg:max-w-7xl mx-auto lg:px-20 flex justify-center lg:justify-start">
-        <div className="relative bg-slate-dark/90 backdrop-blur-sm rounded-sm p-10 lg:p-14 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none lg:max-w-xl">
+      <div className="absolute bottom-10 px-6 lg:relative z-10 w-full max-w-2xl lg:max-w-7xl mx-auto lg:px-20 flex justify-center lg:justify-start">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="relative bg-slate-dark/90 backdrop-blur-sm rounded-sm p-10 lg:p-14 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none lg:max-w-xl"
+        >
           {/* Top Left Quote Icon */}
-          <div className="absolute -top-4 -left-2 lg:left-0 lg:-top-6">
+          <div
+            className="absolute -top-4 -left-2 lg:left-0 lg:-top-6"
+          >
             <Image
               src="/icons/quote_icon.png"
               alt="Quote"
@@ -59,7 +78,9 @@ export default function ThoughtsSection() {
           </div>
 
           {/* Bottom Right Quote Icon */}
-          <div className="absolute -bottom-4 -right-2 lg:right-0 lg:-bottom-6 rotate-180">
+          <div
+            className="absolute -bottom-4 -right-2 lg:right-0 lg:-bottom-6 rotate-180"
+          >
             <Image
               src="/icons/quote_icon.png"
               alt="Quote"
@@ -82,7 +103,7 @@ export default function ThoughtsSection() {
               e coerência ao longo tempo.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

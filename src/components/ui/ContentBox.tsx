@@ -1,3 +1,7 @@
+"use client";
+
+import { motion, Variants } from "framer-motion";
+
 interface ContentBoxProps {
   title: string;
   subtitle?: string;
@@ -9,21 +13,57 @@ export default function ContentBox({
   subtitle,
   children,
 }: ContentBoxProps) {
-  return (
-    <div className="relative w-full max-w-2xl px-6 py-12 md:px-10 md:py-16  bg-rose-light/20">
-      {/* Background with low opacity */}
-      <div className="absolute inset-x-8 inset-y-8 md:inset-x-12 md:inset-y-12 bg-rose-light/10 -z-10" />
+  const boxVariants: Variants = {
+    hidden: { opacity: 0, y: 15 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
 
+  return (
+    <motion.div
+      variants={boxVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+      className="relative w-full max-w-2xl px-6 py-12 md:px-10 md:py-16 bg-rose-light/20"
+    >
       {/* Top Left Decoration */}
       <div className="absolute top-0 left-0">
-        <div className="absolute h-24 w-0.5 bg-rose-dark -top-4 left-0" />
-        <div className="absolute w-24 h-0.5 bg-rose-dark top-0 -left-4" />
+        <motion.div
+          initial={{ height: 0 }}
+          whileInView={{ height: 96 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="absolute w-0.5 bg-rose-dark -top-4 left-0"
+        />
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: 96 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="absolute h-0.5 bg-rose-dark top-0 -left-4"
+        />
       </div>
 
       {/* Bottom Right Decoration */}
       <div className="absolute bottom-0 right-0">
-        <div className="absolute h-24 w-0.5 bg-rose-dark -bottom-4 right-0" />
-        <div className="absolute w-24 h-0.5 bg-rose-dark bottom-0 -right-4" />
+        <motion.div
+          initial={{ height: 0 }}
+          whileInView={{ height: 96 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="absolute w-0.5 bg-rose-dark -bottom-4 right-0"
+        />
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: 96 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="absolute h-0.5 bg-rose-dark bottom-0 -right-4"
+        />
       </div>
 
       <div className="relative z-10 space-y-6 text-slate-dark">
@@ -42,6 +82,6 @@ export default function ContentBox({
           {children}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

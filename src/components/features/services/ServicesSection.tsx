@@ -1,11 +1,35 @@
+"use client";
+
 import {
   differentiators,
   processSteps,
   targetAudience,
 } from "@/data/ContentText";
 import ContentBox from "@/components/ui/ContentBox";
+import { motion, Variants } from "framer-motion";
 
 export default function ServicesSection() {
+  const listContainerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const listItemVariants: Variants = {
+    hidden: { opacity: 0, x: -10 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
     <section className="flex flex-col items-center gap-30 py-30 bg-beige px-6">
       <ContentBox title="Minha Consultoria">
@@ -41,14 +65,24 @@ export default function ServicesSection() {
           <p className="text-xs md:text-sm font-black text-slate-dark tracking-widest uppercase">
             Indicado para:
           </p>
-          <ul className="space-y-2 text-sm md:text-base leading-relaxed font-medium">
+          <motion.ul
+            variants={listContainerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="space-y-2 text-sm md:text-base leading-relaxed font-medium"
+          >
             {targetAudience.map((item, idx) => (
-              <li key={idx} className="flex gap-2">
+              <motion.li
+                key={idx}
+                variants={listItemVariants}
+                className="flex gap-2"
+              >
                 <span className="text-rose-dark">•</span>
                 <span>{item}</span>
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
       </ContentBox>
 
@@ -63,14 +97,24 @@ export default function ServicesSection() {
           <p className="text-xs md:text-sm font-black text-slate-dark tracking-widest uppercase">
             Diferenciais do trabalho:
           </p>
-          <ul className="space-y-2 text-sm md:text-base leading-relaxed font-medium">
+          <motion.ul
+            variants={listContainerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="space-y-2 text-sm md:text-base leading-relaxed font-medium"
+          >
             {differentiators.map((item, idx) => (
-              <li key={idx} className="flex gap-2">
+              <motion.li
+                key={idx}
+                variants={listItemVariants}
+                className="flex gap-2"
+              >
                 <span className="text-rose-dark">•</span>
                 <span>{item}</span>
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
       </ContentBox>
 
@@ -85,9 +129,19 @@ export default function ServicesSection() {
           <p className="text-xs md:text-sm font-black text-slate-dark tracking-widest uppercase">
             Etapas do trabalho:
           </p>
-          <ol className="space-y-4 text-sm md:text-base leading-relaxed">
+          <motion.ol
+            variants={listContainerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="space-y-4 text-sm md:text-base leading-relaxed"
+          >
             {processSteps.map((item, idx) => (
-              <li key={idx} className="flex gap-3">
+              <motion.li
+                key={idx}
+                variants={listItemVariants}
+                className="flex gap-3"
+              >
                 <span className="text-rose-dark font-black min-w-5">
                   {idx + 1}.
                 </span>
@@ -97,9 +151,9 @@ export default function ServicesSection() {
                   </strong>{" "}
                   {item.desc}
                 </p>
-              </li>
+              </motion.li>
             ))}
-          </ol>
+          </motion.ol>
         </div>
       </ContentBox>
     </section>

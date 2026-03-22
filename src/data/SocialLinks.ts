@@ -16,19 +16,19 @@ const socialLinks: SocialLink[] = [
     id: 2,
     name: "/candidadias",
     path: "/icons/linkedin.png",
-    url: "https://www.linkedin.com/in/candidadiasrp/",
+    url: "https://www.linkedin.com/in/cândida-dias-14713278/",
   },
   {
     id: 3,
     name: "candidadiasrp@gmail.com",
     path: "/icons/email.png",
-    url: "mailto:[EMAIL_ADDRESS]",
+    url: "mailto:candidadiasrp@gmail.com",
   },
   {
     id: 4,
     name: "@candidadias",
     path: "/icons/instagram.png",
-    url: "https://www.instagram.com/candidadiasrp/",
+    url: "https://www.instagram.com/candidadias/",
   },
 ];
 
