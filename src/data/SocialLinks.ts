@@ -6,10 +6,30 @@ interface SocialLink {
 }
 
 const socialLinks: SocialLink[] = [
-  { id: 1, name: "(62) 99801-2376", path: "/icons/whatsapp.png", url: "" },
-  { id: 2, name: "/candidadias", path: "/icons/linkedin.png", url: "" },
-  { id: 3, name: "candidadiasrp@gmail.com", path: "/icons/email.png", url: "" },
-  { id: 4, name: "@candidadias", path: "/icons/instagram.png", url: "" },
+  {
+    id: 1,
+    name: "(62) 99801-2376",
+    path: "/icons/whatsapp.png",
+    url: "https://wa.me/5562998012376",
+  },
+  {
+    id: 2,
+    name: "/candidadias",
+    path: "/icons/linkedin.png",
+    url: "https://www.linkedin.com/in/candidadiasrp/",
+  },
+  {
+    id: 3,
+    name: "candidadiasrp@gmail.com",
+    path: "/icons/email.png",
+    url: "mailto:[EMAIL_ADDRESS]",
+  },
+  {
+    id: 4,
+    name: "@candidadias",
+    path: "/icons/instagram.png",
+    url: "https://www.instagram.com/candidadiasrp/",
+  },
 ];
 
 export default socialLinks;
