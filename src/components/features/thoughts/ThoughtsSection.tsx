@@ -62,7 +62,7 @@ export default function ThoughtsSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="relative bg-slate-dark/90 backdrop-blur-sm rounded-sm p-10 lg:p-14 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none lg:max-w-xl"
+          className="relative bg-slate-dark/90 backdrop-blur-sm rounded-sm p-9 lg:p-14 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none lg:max-w-xl"
         >
           {/* Top Left Quote Icon */}
           <div className="absolute -top-4 -left-2 lg:left-0 lg:-top-6">
@@ -86,18 +86,20 @@ export default function ThoughtsSection() {
             />
           </div>
 
-          <div className="space-y-6 text-beige text-base md:text-xl leading-relaxed font-normal">
+          <div className="space-y-3 lg:space-y-6 text-beige text-base md:text-xl leading-relaxed font-normal">
             <p className="italic">
-              A reputação de uma empresa também <br /> se constrói pela imagem
-              de quem a lidera.
+              A reputação de uma empresa também{" "}
+              <br className="hidden lg:block" /> se constrói pela imagem de quem
+              a lidera.
             </p>
             <p className="italic font-bold">
-              Não estar presente é um risco. <br /> Estar presente sem
-              estratégia, também.
+              Não estar presente é um risco. <br className="hidden lg:block" />{" "}
+              Estar presente sem estratégia, também.
             </p>
             <p className="italic">
-              Comunicação estratégica sustenta credibilidade, <br /> confiança e
-              coerência ao longo do tempo.
+              Comunicação estratégica sustenta credibilidade,
+              <br className="hidden lg:block" /> confiança e coerência ao longo
+              do tempo.
             </p>
           </div>
         </motion.div>
