@@ -31,14 +31,14 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative flex min-h-screen w-full flex-col items-center pt-20 pb-16 overflow-hidden select-none">
+    <section className="relative flex min-h-screen w-full flex-col items-center py-6 lg:py-18 overflow-hidden select-none">
       <BackgroundImage />
 
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="z-10 flex flex-col items-center gap-11 px-6 w-full max-w-5xl"
+        className="z-10 flex flex-col items-center gap-8 lg:gap-11 px-6 w-full max-w-5xl"
       >
         <motion.div variants={itemVariants}>
           <ProfilePhoto />
@@ -65,7 +65,7 @@ export default function HeroSection() {
           <IconsNavbar />
         </motion.div>
 
-        <motion.div variants={itemVariants}>
+        <motion.div variants={itemVariants} className="mt-4">
           <HighlightBox />
         </motion.div>
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import socialLinks from "@/data/SocialLinks";
 
@@ -28,14 +28,13 @@ const FloatingCTA = () => {
         if (entry.isIntersecting) {
           setIsVisible(false);
         } else {
-          // Re-check "about" visibility when leaving footer
           const aboutRect = aboutSection?.getBoundingClientRect();
-          if (aboutRect && (aboutRect.top < window.innerHeight)) {
+          if (aboutRect && aboutRect.top < window.innerHeight) {
             setIsVisible(true);
           }
         }
       },
-      { threshold: 0.1 } // Hide as soon as footer starts appearing
+      { threshold: 0.1 },
     );
 
     if (aboutSection) aboutObserver.observe(aboutSection);
