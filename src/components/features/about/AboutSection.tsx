@@ -25,7 +25,7 @@ export default function AboutSection() {
   };
 
   return (
-    <section className="flex flex-col items-center gap-30 py-30 bg-beige px-6">
+    <section id="about" className="flex flex-col items-center gap-30 py-30 bg-beige px-6">
       {/* Sobre Mim Section */}
       <ContentBox title="Sobre mim" subtitle="Quem é Cândida Dias?">
         <motion.div
@@ -36,23 +36,23 @@ export default function AboutSection() {
           className="space-y-4 text-sm md:text-base leading-relaxed font-medium"
         >
           <motion.p variants={itemVariants}>
-            Sou formada em Relações Públicas pela UFG, com mais de 25 anos de
-            atuação em comunicação estratégica de alta liderança.
+            Formada em Relações Públicas pela UFG, com mais de 25 anos de
+            atuação em comunicação estratégica junto à alta liderança.
           </motion.p>
           <motion.p variants={itemVariants}>
-            Ao longo da minha trajetória, trabalhei lado a lado com CEOs,
-            fundadores, conselheiros e executivos, apoiando posicionamentos,
-            decisões e momentos institucionais relevantes.
+            Ao longo da trajetória, atuação ao lado de CEOs, fundadores,
+            conselheiros e executivos em decisões, posicionamentos e momentos
+            institucionais que exigem clareza, leitura de contexto e
+            responsabilidade.
           </motion.p>
           <motion.p variants={itemVariants}>
-            Minha atuação une estratégia, escuta, leitura e contexto e
-            construção de reputação, sempre com foco em relações consistentes e
-            presença com propósito.
+            A atuação integra estratégia, escuta e construção de reputação, com
+            foco em relações consistentes e presença com propósito.
           </motion.p>
           <motion.p variants={itemVariants}>
-            Sou sócia-fundadora da Agenda4 Eventos, onde construí um repertório
-            sólido em gestão, experiências corporativas, atuando em parceira com
-            lideranças e equipes estratégicas.
+            Como sócia-fundadora da Agenda 4 Eventos, desenvolvi uma base sólida
+            em experiências corporativas e gestão, que amplia a visão na
+            construção de posicionamentos estratégicos.
           </motion.p>
         </motion.div>
       </ContentBox>
@@ -60,9 +60,9 @@ export default function AboutSection() {
       {/* Minha Missão Section */}
       <ContentBox title="Minha missão" subtitle="">
         <p className="text-sm md:text-base leading-relaxed font-medium text-left">
-          Fortalecer lideranças por meio da comunicação estratégica, conectando
-          pessoas, marcas e propósitos com consistência, sensibilidade e visão
-          de futuro
+          Fortalecer lideranças por meio da comunicação estratégica, construindo
+          posicionamentos consistentes, com clareza, sensibilidade e visão de
+          longo prazo.
         </p>
       </ContentBox>
     </section>

@@ -34,10 +34,12 @@ export default function ServicesSection() {
     <section className="flex flex-col items-center gap-30 py-30 bg-beige px-6">
       <ContentBox title="Minha Consultoria">
         <p className="text-sm md:text-base leading-relaxed font-medium">
-          Relações Públicas e estrategista de comunicação que atua com líderes,
-          fundadores e executivos, em especial na construção de marca pessoal,
-          com base em sua sólida experiência em eventos corporativos e design de
-          experiências.
+          Atuo ao lado de líderes, fundadores e executivos na construção de
+          posicionamentos sólidos, onde comunicação, reputação e negócio
+          caminham de forma integrada. <br /> <br /> Minha consultoria vai além
+          da visibilidade: estrutura narrativas, direciona presença e fortalece
+          a percepção de valor, com base em uma trajetória consistente em
+          experiências corporativas.
         </p>
       </ContentBox>
 
@@ -55,10 +57,10 @@ export default function ServicesSection() {
       </ContentBox>
 
       {/* Para quem é o serviço? Section */}
-      <ContentBox title="Para quem é o serviço?" subtitle="">
+      <ContentBox title="Para quem é?" subtitle="">
         <p className="text-sm md:text-base leading-relaxed font-medium">
-          Este trabalho é direcionado para líderes que precisam fortalecer sua
-          presença estratégica.
+          Para líderes e executivos que já ocupam posições de decisão e buscam
+          fortalecer sua presença com mais clareza, consistência e intenção.
         </p>
 
         <div className="space-y-4">
@@ -87,16 +89,13 @@ export default function ServicesSection() {
       </ContentBox>
 
       {/* Meus diferenciais Section */}
-      <ContentBox title="Meus diferenciais" subtitle="">
+      <ContentBox title="Diferenciais de atuação" subtitle="">
         <p className="text-sm md:text-base leading-relaxed font-medium">
-          O trabalho é baseado em experiência prática com liderança e
-          comunicação institucional.
+          A atuação é sustentada por experiência prática junto à alta liderança
+          e pela integração entre comunicação, estratégia e contexto de negócio.
         </p>
 
         <div className="space-y-4">
-          <p className="text-xs md:text-sm font-black text-slate-dark tracking-widest uppercase">
-            Diferenciais do trabalho:
-          </p>
           <motion.ul
             variants={listContainerVariants}
             initial="hidden"
@@ -122,12 +121,12 @@ export default function ServicesSection() {
       <ContentBox title="Processo" subtitle="">
         <p className="text-sm md:text-base leading-relaxed font-medium">
           A metodologia é estruturada para alinhar estratégia, comunicação e
-          presença pública da liderança.
+          presença de liderança.
         </p>
 
         <div className="space-y-4">
           <p className="text-xs md:text-sm font-black text-slate-dark tracking-widest uppercase">
-            Etapas do trabalho:
+            Como funciona a atuação:
           </p>
           <motion.ol
             variants={listContainerVariants}

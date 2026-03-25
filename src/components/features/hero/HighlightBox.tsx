@@ -38,8 +38,8 @@ export default function HighlightBox() {
       </div>
 
       <p className="text-sm md:text-xl text-slate-dark leading-relaxed font-medium">
-        Posicionamento, reputação e presença institucional para CEOs,
-        fundadores, executivos e palestrantes
+        Posicionamento, reputação e presença estratégica para CEOs, fundadores e
+        executivos que desejam fortalecer sua autoridade e relevância.
       </p>
     </div>
   );

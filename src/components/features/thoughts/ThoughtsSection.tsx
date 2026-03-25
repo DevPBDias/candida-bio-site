@@ -65,9 +65,7 @@ export default function ThoughtsSection() {
           className="relative bg-slate-dark/90 backdrop-blur-sm rounded-sm p-10 lg:p-14 lg:bg-transparent lg:backdrop-blur-none lg:shadow-none lg:max-w-xl"
         >
           {/* Top Left Quote Icon */}
-          <div
-            className="absolute -top-4 -left-2 lg:left-0 lg:-top-6"
-          >
+          <div className="absolute -top-4 -left-2 lg:left-0 lg:-top-6">
             <Image
               src="/icons/quote_icon.png"
               alt="Quote"
@@ -78,9 +76,7 @@ export default function ThoughtsSection() {
           </div>
 
           {/* Bottom Right Quote Icon */}
-          <div
-            className="absolute -bottom-4 -right-2 lg:right-0 lg:-bottom-6 rotate-180"
-          >
+          <div className="absolute -bottom-4 -right-2 lg:right-0 lg:-bottom-6 rotate-180">
             <Image
               src="/icons/quote_icon.png"
               alt="Quote"
@@ -92,15 +88,16 @@ export default function ThoughtsSection() {
 
           <div className="space-y-6 text-beige text-base md:text-xl leading-relaxed font-normal">
             <p className="italic">
-              A imagem da liderança hoje é parte ativa da reputação da empresa.
+              A reputação de uma empresa também <br /> se constrói pela imagem
+              de quem a lidera.
+            </p>
+            <p className="italic font-bold">
+              Não estar presente é um risco. <br /> Estar presente sem
+              estratégia, também.
             </p>
             <p className="italic">
-              Não estar presente é um risco. Estar presente sem estratégia,
-              também.
-            </p>
-            <p className="italic">
-              Comunicação estratégica é o que sustenta credibilidade, confiança
-              e coerência ao longo tempo.
+              Comunicação estratégica sustenta credibilidade, <br /> confiança e
+              coerência ao longo do tempo.
             </p>
           </div>
         </motion.div>

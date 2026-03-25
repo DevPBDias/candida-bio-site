@@ -8,12 +8,12 @@ const targetAudience = [
 ];
 
 const differentiators = [
-  "Mais de 25 anos de experiência em comunicação estratégica",
+  "Mais de 25 anos de atuação em comunicação estratégica",
   "Experiência direta com CEOs, fundadores e executivos",
-  "Olhar estratégico e personalizado para reputação e posicionamento",
+  "Olhar estratégico e personalizado para posicionamento e reputação",
   "Atuação integrada com marketing, relações institucionais e liderança",
   "Experiência com empresas de diferentes portes e setores",
-  "Construção de presença baseada em coerência, propósito e estratégia",
+  "Construção de presença com base em coerência, consistência e estratégia",
 ];
 
 const processSteps = [
@@ -27,7 +27,7 @@ const processSteps = [
   },
   {
     label: "Estruturação da comunicação",
-    desc: "Orientação para conteúdos, materiais institucionais e canais de presença.",
+    desc: "Orientação para conteúdo, materiais institucionais e canais de presença.",
   },
   {
     label: "Estratégia de visibilidade",

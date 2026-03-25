@@ -56,7 +56,7 @@ export default function HeroSection() {
               Relações Públicas & Comunicação Estratégica
             </p>
             <p className="text-sm md:text-lg font-medium">
-              Sócia-fundadora da Agenda4 Eventos
+              Sócia-fundadora da Agenda 4 Eventos
             </p>
           </div>
         </motion.div>

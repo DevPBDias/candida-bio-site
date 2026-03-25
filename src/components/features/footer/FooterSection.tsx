@@ -25,7 +25,10 @@ export default function FooterSection() {
   };
 
   return (
-    <footer className="relative w-full min-h-screen flex flex-col items-center justify-end lg:justify-center overflow-hidden">
+    <footer
+      id="footer"
+      className="relative w-full min-h-screen flex flex-col items-center justify-end lg:justify-center overflow-hidden"
+    >
       {/* Background Container */}
       <div className="absolute inset-0 -z-10 bg-slate-dark w-full h-full">
         {/* Mobile: Top-aligned Image with Gradient */}
@@ -45,10 +48,10 @@ export default function FooterSection() {
         <div className="hidden lg:block relative w-full h-full">
           <div className="absolute inset-0 flex">
             {/* Dark Column (Left) */}
-            <div className="w-1/3 bg-slate-dark" />
+            <div className="w-2/5 bg-slate-dark" />
 
             {/* Image Column (Right) */}
-            <div className="relative w-2/3 h-full">
+            <div className="relative w-3/5 h-full">
               <motion.div
                 initial={{ scale: 1.05, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
@@ -65,7 +68,7 @@ export default function FooterSection() {
                 />
               </motion.div>
               {/* Desktop Horizontal Fade from Slate Dark */}
-              <div className="absolute inset-0 bg-linear-to-r from-slate-dark via-slate-dark/30 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-r from-slate-dark via-slate-dark/45 to-transparent" />
             </div>
           </div>
         </div>
@@ -77,27 +80,27 @@ export default function FooterSection() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="relative z-10 flex flex-col items-center lg:items-start w-full max-w-7xl mx-auto px-6 pb-12 lg:pb-0 lg:px-20 gap-6 lg:gap-10"
+        className="relative z-10 flex flex-col items-center lg:items-start w-full max-w-7xl mx-auto px-6 pb-4 lg:pb-0 lg:px-12 gap-6 lg:gap-10"
       >
-        <div className="flex flex-col items-center gap-10 lg:gap-14">
+        <div className="flex flex-col items-center gap-8 lg:gap-14">
           {/* Name & Title */}
           <motion.div
             variants={itemVariants}
             className="text-center space-y-4 lg:mt-8"
           >
             <h2 className="font-serif antialiased tracking-tight text-5xl md:text-6xl lg:text-7xl text-beige [text-shadow:0.6px_0_0_currentColor]">
-              Cândida Dias
+              Vamos conversar?
             </h2>
-            <div className="space-y-2 text-beige/90 text-sm md:text-lg font-medium tracking-wide">
-              <p>Relações Públicas & Comunicação Estratégica</p>
-              <p>Sócia-fundadora da Agenda4 Eventos</p>
-            </div>
+            <p className="text-sm md:text-lg font-medium max-w-xl text-beige">
+              Se fizer sentido para o seu momento, será um prazer entender seu
+              contexto e avaliar como posso contribuir de forma estratégica.
+            </p>
           </motion.div>
 
           {/* Social Icons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col gap-2 lg:gap-4"
+            className="flex flex-col gap-1.5 lg:gap-3"
           >
             {socialLinks.map((icon) => (
               <motion.a
@@ -125,7 +128,7 @@ export default function FooterSection() {
             variants={itemVariants}
             className="text-beige/60 text-[10px] md:text-xs text-center space-y-1 lg:mt-16"
           >
-            <p>© 2026 Cândida Dias • Todos direitos reservados</p>
+            <p>© 2026 Cândida Dias • Todos os direitos reservados</p>
             <p>
               Desenvolvido por{" "}
               <a

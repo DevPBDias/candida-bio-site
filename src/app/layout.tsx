@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { inter, newYork } from "./fonts";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import FloatingCTA from "@/components/ui/FloatingCTA";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -37,6 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${newYork.variable} antialiased`}>
         {children}
+        <FloatingCTA />
         <Analytics />
         <SpeedInsights />
       </body>
