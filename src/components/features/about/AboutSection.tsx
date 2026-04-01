@@ -25,7 +25,10 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="about" className="flex flex-col items-center gap-30 py-30 bg-beige px-6">
+    <section
+      id="about"
+      className="flex flex-col items-center gap-30 py-30 bg-beige px-6"
+    >
       {/* Sobre Mim Section */}
       <ContentBox title="Sobre mim" subtitle="Quem é Cândida Dias?">
         <motion.div
@@ -40,18 +43,18 @@ export default function AboutSection() {
             atuação em comunicação estratégica junto à alta liderança.
           </motion.p>
           <motion.p variants={itemVariants}>
-            Ao longo da trajetória, atuação ao lado de CEOs, fundadores,
-            conselheiros e executivos em decisões, posicionamentos e momentos
+            Ao longo da trajetória, atuou ao lado de CEOs, fundadores,
+            conselheiros e executivos em decisões estratégicas e momentos
             institucionais que exigem clareza, leitura de contexto e
             responsabilidade.
           </motion.p>
           <motion.p variants={itemVariants}>
             A atuação integra estratégia, escuta e construção de reputação, com
-            foco em relações consistentes e presença com propósito.
+            foco em relações consistentes e presença com intencionalidade.
           </motion.p>
           <motion.p variants={itemVariants}>
-            Como sócia-fundadora da Agenda 4 Eventos, desenvolvi uma base sólida
-            em experiências corporativas e gestão, que amplia a visão na
+            Como sócia-fundadora da Agenda 4 Eventos, construiu uma base sólida
+            em experiências corporativas e gestão, ampliando a visão na
             construção de posicionamentos estratégicos.
           </motion.p>
         </motion.div>
